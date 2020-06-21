@@ -1,0 +1,176 @@
+.black-bar-bottom {/*вехняя полоска*/
+	background-color: rgb(0,18,47);/*цвет*/
+	color: white;/*цвет текста внутри этой полоски*/
+	/* border:1px solid orange; */
+}
+
+.footer-container{
+	/*padding-top: 30px;*/
+	padding-bottom: 50px;
+	/*padding-left: 20px;*/
+	justify-content: space-around;
+	
+	/* border:1px solid green; */
+}
+
+.menu-container-list {/*коробка меню*/
+	margin-top: 20px;
+	width: 300px;
+	/* border:1px solid green; */
+}
+	
+	.menu-container-list ul {
+		list-style: none;/*обнуление*/
+		margin: 0;/*обнуление*/
+		padding: 0;/*обнуление*/
+}
+	.menu-container-list li {
+		width: 46%;/*подгон ширины*/
+		line-height: 32px;/*подгон строки под шаблон*/
+		float: left;/*все остальное справа*/
+	}
+
+.contact-container {
+	margin-top: 20px;
+	width: 200px;/*ширина коробки*/
+	/*margin-left: 137px;*//*отступ от предыдущей коробки*/
+	/*float: left;*/
+	/* border: 1px solid grey; */
+}
+	.contact-container ul {
+		list-style: none;/*обнуление*/
+		margin: 0;/*обнуление*/
+		padding: 0;/*обнуление*/
+	}
+	.contact-container li {
+		padding-top: 15px;/*подгон паддингом*/
+	}
+
+.socials-tel-container {
+	margin-top: 20px;
+	/* border:1px solid yellow; */
+}
+
+.socials-container {/**/
+	width: 300px;
+	/*float: right;*/
+	
+	/* border:1px solid green; */
+}
+	.socials-container ul {
+		list-style: none;/*обнуление*/
+		margin: 0;/*обнуление*/
+		padding: 0;/*обнуление*/
+		/*float:right;*/
+	}
+
+	.socials-container li {
+		display: inline-block;/*поведение как строка*/
+		margin-left: 12px;/*отступ слева от внутр стенки коробки*/
+		border: 1px solid white;/*граница частного бокса*/
+		border-radius: 50%;/*закругления частного бокса*/
+	}
+		
+.fb {
+	display: block;
+	width: 40px;/*ширина частного бокса*/
+	height: 40px;/*высота частного бокса*/
+	background-image: url(../img/facebook.png);/**/
+	background-repeat: no-repeat;/*только одна картинка*/
+	background-position: center;/*равнение посередине*/
+}
+
+.vk {
+	display: block;
+	width: 40px;
+	height: 40px;
+	background-image: url(../img/vk.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+	
+.twit {
+	display: block;
+	width: 40px;
+	height: 40px;
+	background-image: url(../img/twitter.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.inst {
+	display: block;
+	width: 40px;
+	height: 40px;
+	background-image: url(../img/instagram.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.tel-container {/*бокс с телефонами*/
+	margin-top: 20px;
+	width: 250px;/**/
+	/*float: right;*//*положение правый край*/
+	font-size: 18px;/**/
+	justify-self: flex-end;
+	/* border:1px solid green; */
+}
+	.tel-container ul {/**/
+		list-style: none;/*обнуление*/
+		margin: 0;/*обнуление*/
+		padding: 0;/*обнуление*/
+	}
+
+	.tel-container li:first-child {/**/
+		margin-left: 28px;/*отступ от лев края бокса*/
+		margin-top: 0;
+	}
+
+	.tel-container li {/**/
+		margin-top: 20px;/*отступ от верх строчки*/
+		margin-left: 28px;/*отступ от лев края бокса*/
+	}
+	
+
+.tel {
+	margin-top: 20px;
+	padding-left: 32px;/*отступ место под картинку*/
+	background-image: url('../img/tel.png');/**/
+	background-repeat: no-repeat;/**/
+}
+		
+.e-mail {
+	padding-left: 32px;
+	background-image: url('../img/e-mail.png');/**/
+	background-repeat: no-repeat;
+	background-position: center left;/*подгон по шаблону*/
+}
+	
+.bottom-box {
+	margin: 0;/*обнуление*/
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	font-size: 14px;/**/
+	color: #8d9198;/*сер цвет текста*/
+	border-top: 1px solid #26354e;/*сер линия на всю длину*/
+}
+
+
+
+
+.currency {
+	width: 150px;
+	height: 70px;
+	border: 2px solid grey;
+	background-color: #26354e;
+	font-size: 14px;
+	text-align: center;
+	padding-top: 0;
+	color: white;
+	border-radius: 10px;
+	/* border:1px solid green; */
+}
+
+.USD .EUR {
+	color: red!important;
+}

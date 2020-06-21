@@ -1,0 +1,344 @@
+.background-grey {/*спец бокс для заднего фона на всю длину окна*/
+	background-image: url('../img/central-bg-top.png');/*полоска*/
+	background-repeat: repeat-x;/*копи только по горизонтали*/
+	background-color: #f9f9f9;/*сер фон*/
+	/*width: 100%;*/
+}
+
+.main-container {
+	width: 100%;
+	/*display: flex;*/
+	/*flex-wrap: wrap;*/
+	justify-content: space-between;
+	padding-top: 20px;/*отступ от хеадера*/
+	padding-bottom: 50px;
+	/* border:3px solid rgb(0, 255, 234); */
+	/*overflow-y: hidden;при избытке текста текст не вылазит за бокс*/
+}
+
+/*---------- левая колонка-----------------------*/
+/*---------- левая колонка-----------------------*/
+/*---------- левая колонка-----------------------*/
+/*---------- левая колонка-----------------------*/
+/*---------- левая колонка-----------------------*/
+/*---------- левая колонка-----------------------*/
+/*---------- левая колонка-----------------------*/
+/*---------- левая колонка-----------------------*/
+/*---------- левая колонка-----------------------*/
+/*---------- левая колонка-----------------------*/
+/*---------- левая колонка-----------------------*/
+
+
+.column-left {
+	/*position: relative;*/
+	width: 25%;
+	min-width: 250px;
+	/*max-width: 320px;*/
+	margin-right: 2%;
+	background-color: #FFFFFF;
+	/*float: left;*/
+	font-size: 14px;/**/
+	/* border:1px solid red; */
+	/*box-sizing: border-box*/;
+	order: 0;
+	
+}
+	.column-left ul{/**/
+		margin: 0;/*обнуление границ*/
+		padding: 35px 20px 0 18px;/*обнуление*/
+		list-style: none;/*обнуление*/
+	}
+	.column-left li{/**/
+		margin-bottom: 30px;
+	}
+
+	.column-left li:last-child{/**/
+		margin-bottom: 0;
+	}
+
+	.column-left-title {
+		font-size: 20px; /*переопреление размера шрифта он стандарта*/
+		margin:0;/*обнуление заводских границ*/
+		padding: 24px 0 24px 18px;/*переопределение заводских отступов*/
+		border-bottom: 1px solid #e5e5e5;/*линия*/
+	}
+	
+	.news-item-text {
+		padding: 0;/*обнуление*/
+		font-size: 14px;/*переопределение шрифта от заводского*/
+		font-weight: normal;/*сброс*/
+		margin: 0;/*обнуление*/
+		margin-bottom: 20px;
+	}
+	.news-item-props {/*нижняя полоска с пропсами*/
+		font-size: 12px;/**/
+		display: inline;
+	}
+		.news-item-category {
+			width: 100px;
+			display: inline-block;
+			color: #91919f;/**/
+		}
+		.news-item-time {
+			display: inline-block;
+			width: 35px;
+			padding-left: 15px;/*отступ место под картинку*/
+			background-image: url('../img/icon-time.png');/**/
+			background-repeat: no-repeat;/**/
+			background-position: center left;
+		}	
+		
+		.news-item-comments {/**/
+			display: inline-block;
+			width: 25px;
+			padding-left: 15px;/**/
+			background-image: url('../img/icon-comments.png');/**/
+			background-repeat: no-repeat;
+			background-position: center left;
+		}
+
+.rounded-box {
+	display: inline-block;/*поведение как блока но в строке*/
+	width: 70%;/*ширина бокса*/
+	margin: 15px 0 15px 30px;/*позиция от последнего*/
+	padding: 13px 0;/*растягивание бокса по высоте путем отступов*/
+	border: 2px solid rgb(131,174,217);/*рамка*/
+	border-radius: 25px;/*скругления*/
+	text-align: center;/*текст в середину*/
+	color: rgb(131,174,217);/*цвет текста*/
+	justify-content: center;
+}
+/*.column-left a {
+	justify-content: center;
+}*/
+/*---------- центральная колонка-----------------------*/
+/*---------- центральная колонка-----------------------*/
+/*---------- центральная колонка-----------------------*/
+/*---------- центральная колонка-----------------------*/
+/*---------- центральная колонка-----------------------*/
+/*---------- центральная колонка-----------------------*/
+/*---------- центральная колонка-----------------------*/
+/*---------- центральная колонка-----------------------*/
+/*---------- центральная колонка-----------------------*/
+/*---------- центральная колонка-----------------------*/
+/*---------- центральная колонка-----------------------*/
+/*---------- центральная колонка-----------------------*/
+
+
+.column-center {
+	
+	width: 45%;
+	min-width: 320px;
+	margin-right: 2%;
+	/* border:1px solid red; */
+	order:1;
+}
+	.column-center ul {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin: 0;/*сброс*/
+		padding-left: 0;/*сброс*/
+		list-style: none;/*сброс*/
+		
+	}
+	.column-center li:first-child {
+		/*margin-bottom: 20px;*/
+		/*width: 100%;*/
+		
+		/* flex-grow: 0; */
+	}
+
+.news-item-2x {
+	width: 100%;
+	min-width: 320px;
+	font-size: 12px;
+	color: white;
+	position: relative;
+}
+
+.image-2x{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	/* object-fit: contain;
+	max-height: 470px; */
+
+	
+	
+}
+
+.over-img-center{
+		padding-left: 20px;
+		padding-bottom: 25px;
+		position: relative;
+
+}
+	
+
+	.news-item-category-2x {
+		display: block;
+		padding-top: 25.5%;
+		
+	}
+
+	.news-item-2x-title {
+		/* display: block; */
+		width: 85%;/*ширина текста*/
+		margin: 30px 0 20px 0;
+		font-size: 30px;
+		background-color: transparent;
+		
+	}
+	
+/* 
+	.date-block2x {
+
+		display: inline-block;
+		margin: 20px 0 0 20px;
+		padding-bottom: 20px;
+
+	} */
+	
+	.time-block2x {
+		/* display: inline-block; */
+		margin-left: 20px;
+		padding-left: 15px;/*отступ место под картинку*/
+		background-image: url('../img/clock_5.png');
+		background-repeat: no-repeat ;/**/
+		background-position: center left;/*чтобы иконка была пониже. подбирал спадингом*/
+	}
+
+.news-item-1x {
+	width: 48%;
+	margin-top: 20px;
+	/*float: left;*/
+	/* border:1px solid green; */
+}
+
+.image-1x{
+	width: 100%;
+	/* object-fit: cover; */
+	/*float: left;*/
+	border:1px solid green;
+}
+
+/* .news-item-1x h3 {
+	margin: 15px 0 15px 0;
+} */
+.news-item-text-1x {
+	/*padding-left: 20px;*/
+	font-size: 14px;/**/
+	margin: 3px 0 0 0;/*переопределение границ от заводских*/
+	line-height: 1.4em;/*подгонка высоты строки под макет*/
+}
+/*.mar-left {
+	margin-left: 20px;
+}*/
+
+/*---------- нижняя колонка-----------------------*/
+/*---------- нижняя колонка-----------------------*/
+/*---------- нижняя колонка-----------------------*/
+/*---------- нижняя колонка-----------------------*/
+/*---------- нижняя колонка-----------------------*/
+/*---------- нижняя колонка-----------------------*/
+/*---------- нижняя колонка-----------------------*/
+/*---------- нижняя колонка-----------------------*/
+/*---------- нижняя колонка-----------------------*/
+
+.special-news {
+	position: relative;
+	width: 100%;
+	margin-top: 20px;
+	display: flex;
+	
+	flex-direction: row-reverse;
+	order: 3;
+	/* border: 3px solid green; */
+	/* background-color: white; */
+
+}
+
+.special-right-column {
+	max-width: 41%;
+	display: inline-block;
+}
+	.special-right-column ul{/**/
+		margin: 0;/*обнуление границ*/
+		padding: 0 20px 0 18px;/*обнуление*/
+		list-style: none;/*обнуление*/
+		/* border: 3px solid blue; */
+	}
+
+	.special-right-column li{
+		margin-bottom: 30px;
+		/* border: 1px solid red; */
+	}
+	.special-right-column li:last-child{
+		margin-bottom: 0;
+	}
+	/* 
+	} */
+
+.special-news-title {
+	font-size: 20px; /*переопреление размера шрифта он стандарта*/
+	margin:0 0 30px 0;/*обнуление заводских границ*/
+	padding: 24px 0 24px 20px ;/*переопределение заводских отступов*/
+	border-bottom: 1px solid #e5e5e5;
+	/* border: 3px solid yellowgreen; */
+	}
+		
+.special-left-item2x2 {
+		color: white;
+		font-size: 12px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		max-width: 59%;
+		height: 100%;
+		margin-bottom: 0;
+}
+.special-left-item2x2 img{
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	
+}
+
+.over-img-special {
+	/* display: block; */
+	position: relative;
+	padding: 0 20px 20px 20px;
+	z-index: 2;
+	width: 100%;
+	box-sizing: border-box;
+}
+.special-item-category-2x2 {
+	display: inline-block;
+	margin-top: 100px;
+	
+}
+
+.special-item-2x2-title {
+		width: 80%;/*ширина текста*/
+		margin: 30px 0 30px 0;
+		font-size: 30px;
+		background-color: transparent;
+	}
+
+.special-item-2x2-text {/*мелк текст*/
+	display: block;
+	margin-top: 20px;
+	font-size: 14px;
+	max-width: 90%;
+	background-color: transparent;
+
+}
+
+.bold {/*корректирующий стиль*/
+	font-weight: bold;
+	font-size: 16px;
+}
+

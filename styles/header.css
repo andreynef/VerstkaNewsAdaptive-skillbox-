@@ -1,0 +1,296 @@
+.flex-container {
+	max-width: 1000px;
+	display: flex;
+	flex-wrap: wrap;
+	/* border: 1px solid purple; */
+	
+	margin: 0 auto;
+}
+.justify {
+	justify-content: space-between;
+}
+.fixed-container {
+	max-width: 1000px;/*ширина поля всей страницы*/
+	/*min-width: 320px;*/
+	/*padding: 0 20px;*/
+	/*margin: 0 auto;*//*внешн отступы сверху и снизу 0, а по бокам авто*/
+
+}
+
+.black-bar-top {/*вехняя полоска*/
+	background-color: rgb(0,18,47);/*цвет*/
+	color: white;/*цвет текста внутри этой полоски*/
+	padding: 16px 0 16px 0;
+	width: 100%;
+	/*margin-right: 0;*/
+	/* border: 1px solid red; */
+	/*flex-basis: 100%;*/
+	/*order:-2;*/
+
+}
+.time {
+	justify-content: flex-end;
+}
+
+.page-title {/*текст левого блока*/
+	margin:0;/*обнуление H1 стандартных отступов*/
+	padding-left: 20px;
+	font-weight: normal;/*переопределение жирности стандартного h1 текста*/
+	font-size: 16px;/*переопределение стандартного h1 размера текста*/
+	float: left;/*обтекание всего остального справа от него*/
+}
+.underlined-link {
+	text-decoration: underline;
+}
+
+.top-time {/*текст правого текста*/
+	float: right;
+	padding-right: 20px;/*обтекание всего остального слева от него*/
+}
+
+
+/*------logo container-------метод тыка*/
+
+.logo-container {/**/
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	margin-top: 40px;/*фикс ибо в не предполагается добавления текста*/
+	/* border: 1px solid green; */
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	order:-1;
+	position: relative;/*для всплыв меню*/
+
+}
+
+/*.logo-container form{
+	display: flex;
+}*/
+.logo-box {
+	/*display: inline-block;*//**/
+	/*width: 13%;*/
+	min-width: 125px;/**/
+	/*float: left;*/
+	padding-left: 20px;
+}
+
+.city {
+	/*display: inline-block;*//**/
+	/*padding-top: 20px;*//**/
+	/*margin-left: 60px;*//**/
+	color: rgb(131,174,217);/**/
+	text-decoration: underline;/**/
+}
+.time-weather-items{
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+
+}
+
+.date-header {/**/
+	display: inline-block;/**/
+	/*margin-left: 65px;*//**/
+	/*padding-top: 20px;*/
+	color: #d0d0d6;/**/
+}
+
+.time-header {/**/
+	display: inline-block;/**/
+	margin-left: 20px;
+	padding-left: 25px;/**/
+	background-image: url('../img/icon-time.png');/**/
+	background-repeat: no-repeat;/**/
+	background-size: contain;/**/
+	color: #d0d0d6;/**/
+}
+
+.weather {/**/
+	display: inline-block;/**/
+	margin-left: 15px;
+	padding-left: 40px;/**/
+	/*padding-top: 20px;*/
+	background-image: url('../img/icon-weather.png');/**/
+	background-repeat: no-repeat;/**/
+	background-size: 30px;
+	background-position: bottom left;
+	color: #d0d0d6;/**/
+}
+
+.search-box {/**/
+	display: flex;/*поведение как блока нр в строчной форме*/
+	justify-content: flex-end;
+	position: relative;
+	width: 30%;
+	/*right: 0;*//*выравнивание по прав краю*/
+	/*float: right;*/
+	/* border: 1px solid blue; */
+
+}
+
+	.search-input {/*поле*/
+  		/*position: relative;*/
+  		width: 100%;
+  		/*max-width: 350px;*/
+  		height: 35px;/*высота поля*/
+  		padding-left: 20px;/*отступ чтобы placeholder не был у края*/
+  		border-radius: 25px;/*закругления*/
+  		border: none;/*без рамки*/
+  		background: #f3f3f3;/*цвет поля*/
+  		outline: none;/*чтоьы не было при нажатии выделения внешней рамки*/
+  		font-size: 14px;/**/
+  		
+  	}
+	.search-button {/*кнопка*/
+  		position: absolute;/*позиция относительно бокса search чтобы он оказался внутри а не рядом*/
+  		width: 20px;
+  		height: 20px;
+  		padding: 0;
+  		/*margin-left: -40px;
+  		margin-top: -40px;*/
+  		top: 10px;/*отступ сверху*/
+  		right: 20px;/*позиция справа*/
+  		border: none;/**/  		
+  		cursor: pointer;/*палец*/
+  		background: transparent;
+  		background-image: url('../img/search.png');/*источник иконки лупы*/
+  		background-repeat: no-repeat;/**/
+		background-position:center;/**/
+		
+	}
+
+.menu-container {
+	
+	margin-top: 35px;
+	margin-bottom: 35px;
+	/*padding-left: 20px;*/
+	/* border: 1px solid green; */
+	width: 100%;
+	order: 0;	
+	justify-content: center;
+}
+	.menu-container ul {/**/
+		display: flex;
+		margin: 0;/*обнуление полей*/
+		padding-left: 20px;/*обнуление отступа */
+	}
+
+	.menu-container li{/**/
+		display: inline;/*строчное поведение*/
+   	}	
+
+	.menu-container li:after {/*добавочное справа*/
+		content: "/";    /*добавочный обьект*/	
+    	padding-left: 13px;/*отступ слева*/
+    	padding-right: 13px;/*отступ справа*/
+		color: rgb(225,225,228);/*цвет добавочного обьекта*/
+	}
+
+	.menu-container li:last-child:after {/**/
+		content: ""/*обнуление правого знака*/
+	}
+
+/*--------------------------------menu------------------------------------------*/
+
+.menu-burger-box {
+	/* padding-left: 20px; */
+  	/* border: 1px solid red; */
+  	/* display: none; */
+  	/* z-index: 1; */
+  	/*padding-bottom: 5px;*/
+  	
+
+}
+
+.menu-button {
+  background-image: url(../img/menu.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: none;
+  padding: 15px 0; 
+  width: 40px;
+  border-style: none;
+  background-color: white;
+}
+
+
+/* .submenu {
+  position: absolute;
+  width: 150px;
+  top: 10px;
+  left: 12px;
+  background: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  list-style: none;
+  margin: 0;
+  opacity: 0;
+  padding: 10px 0 0 0;
+  visibility: hidden;
+  transition: all 0.25s;
+}
+
+.submenu li {
+  border-bottom: 1px solid #EBEBEB;
+  padding: 7px 10px;
+}
+
+.submenu li:last-child {
+  border-bottom: none;
+}
+
+.submenu a {
+  color: #777;
+  padding: 5px 0;
+}
+
+.submenu a:hover {
+   color: red; 
+}
+
+.menu-burger-box:hover .submenu {
+  opacity: 1;
+  top: 90%;
+  visibility: visible;
+
+  
+}
+
+.submenu-new {
+	position: absolute;
+	width: 150px;
+	top: 10px;
+	left: 12px;
+	background: #fff;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+	list-style: none;
+	margin: 0;
+	opacity: 0;
+	padding: 10px 0 0 0;
+	visibility: hidden;
+	transition: all 0.25s;
+  }
+  
+  .submenu-new li {
+	border-bottom: 1px solid #EBEBEB;
+	padding: 7px 10px;
+  }
+  
+  .submenu-new li:last-child {
+	border-bottom: none;
+  }
+  
+  .submenu-new a {
+	color: #777;
+	padding: 5px 0;
+  }
+  
+  .submenu-new a:hover {
+	 color: red; 
+  }
+   */
+  /* .menu-burger-box:hover .main-container ul {
+	opacity: 1;
+	top: 90%;
+	visibility: visible; */
